@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js"></script>
+
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+
+    <title>Frontend Mentor | IP Address Tracker</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="ip-address">
+      <div class="ip-address__banner">
+        <h1 class="ip-address__title">IP Address Tracker</h1>
+
+        <form action="#" class="ip-address__form">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            class="ip-address__search"
+            placeholder="Search for any IP address or domain"
+            autocomplete="off"
+          />
+          <button type="submit" class="ip-address__btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14">
+              <path
+                fill="none"
+                stroke="#FFF"
+                stroke-width="3"
+                d="M2 1l6 6-6 6"
+              />
+            </svg>
+          </button>
+        </form>
+
+        <div class="ip-address__results">
+          <div class="ip-address__address">
+            <span class="ip-address__caption">IP Address</span>
+            <p class="ip-address__results-data">&nbsp;</p>
+          </div>
+          <div class="ip-address__location">
+            <span class="ip-address__caption">Location</span>
+            <p class="ip-address__results-data">&nbsp;</p>
+          </div>
+          <div class="ip-address__timezone">
+            <span class="ip-address__caption">Timezone UTC</span>
+            <p class="ip-address__results-data">&nbsp;</p>
+          </div>
+          <div class="ip-address__isp">
+            <span class="ip-address__caption">ISP</span>
+            <p class="ip-address__results-data">&nbsp;</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="ip-address__content">
+        <div class="ip-address__map-container" id="map"></div>
+
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by
+          <a href="https://github.com/iamwhitegod" target="_blank"
+            >Whitegod Kingsley</a
+          >.
+        </div>
+      </div>
+    </div>
+
+    <!-- <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script> -->
+
+    <!-- <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKY8oDPjTuGLAjWCYssOZrTwQXNlm6zjk"
+    ></script> -->
+
+    <script src="app.js"></script>
+  </body>
+</html>
